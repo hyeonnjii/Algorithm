@@ -41,7 +41,7 @@
 
 ### 시행착오
 
-<p> 스택과 달리 FILO로 코드 구현에는 큰 어려움이 없었지만, 시간복잡도를 줄이고 실행시간을 줄이는데 많은 시행착오를 겪었다.</p>
+<p> 스택과 달리 FILO로 코드 구현에는 큰 어려움이 없었지만, **시간복잡도를 줄이고 실행시간을 줄이는데 많은 시행착오**를 겪었다.</p>
 
 <ol>
 	<li> 새로운 자료구조형 선택: queue 리스트 대신 collections.deque() 사용 
@@ -60,7 +60,9 @@
   		<ul>
     			<li>모든 입력을 한 번에 읽고 처리함으로써 여러 번의 input() 호출 피함</li>
        			<li>각 루프에서 입력 기다리는 시간 Save</li>
-	  		```commands = [input().split() for _ in range(cnt)]```
+	  		
+			```commands = [input().split() for _ in range(cnt)]```
+   
    		</ul> 
   	</li>
   
