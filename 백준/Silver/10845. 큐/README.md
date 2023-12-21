@@ -62,9 +62,6 @@
        			<li>각 루프에서 입력 기다리는 시간 Save</li>
 	  		
 			```commands = [input().split() for _ in range(cnt)]```
-   
-   		</ul> 
-  	</li>
   
 </ol>
 
