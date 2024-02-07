@@ -1,19 +1,16 @@
 def solution(s):
-    answer = True
-    left = 0
-    right = 0
-    flag = True
+    slist = list()
     
+    
+    # stack 사용
     for i in s:
         if i == '(':
-            left += 1
-        else:
-            right += 1
-        
-        if left < right:
-            flag = False
-    
-    if left == right and flag == True:
-        return True
-    
-    return False
+            slist.append(i)
+
+        if i == ')':
+            try:
+                slist.pop()
+            except IndexError:
+                return False
+
+    return len(slist) == 0
