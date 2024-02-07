@@ -7,10 +7,9 @@ def solution(s):
         if i == '(':
             slist.append(i)
 
-        if i == ')':
-            try:
+        elif slist and i == ')':
                 slist.pop()
-            except IndexError:
-                return False
+        else:
+            return False
 
     return len(slist) == 0
